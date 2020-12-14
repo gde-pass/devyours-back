@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_finance_currencies",
+  "info": {
+    "name": "currency",
+    "icon": "comment-dollar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "symbol": {
+      "type": "string",
+      "default": "€",
+      "required": true,
+      "maxLength": 1,
+      "unique": false,
+      "minLength": 1
+    },
+    "code": {
+      "type": "string",
+      "default": "EUR",
+      "minLength": 3,
+      "maxLength": 3,
+      "unique": false,
+      "required": true
+    }
+  }
+}

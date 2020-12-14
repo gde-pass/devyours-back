@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cars",
+  "info": {
+    "name": "cars",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "marque": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "component",
+      "repeatable": false,
+      "component": "finance.price",
+      "required": true
+    },
+    "vendeur": {
+      "model": "vendeur"
+    },
+    "mileage": {
+      "type": "decimal",
+      "min": 0
+    }
+  }
+}

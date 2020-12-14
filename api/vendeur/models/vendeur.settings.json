@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vendeurs",
+  "info": {
+    "name": "vendeur"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "minLength": 1,
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "minLength": 1,
+      "required": true
+    }
+  }
+}

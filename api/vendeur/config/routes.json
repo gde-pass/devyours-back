@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vendeurs",
+      "handler": "vendeur.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vendeurs/count",
+      "handler": "vendeur.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vendeurs/:id",
+      "handler": "vendeur.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vendeurs",
+      "handler": "vendeur.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vendeurs/:id",
+      "handler": "vendeur.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vendeurs/:id",
+      "handler": "vendeur.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
