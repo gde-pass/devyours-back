@@ -1,3 +1,3 @@
 # Strapi application
 
-A quick description of your strapi application
+Just a GraphQl api to call
